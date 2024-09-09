@@ -54,4 +54,16 @@ function updateBookIndicies(){
 
 const library = document.querySelector(".library");
 const addBookButton = document.querySelector(".add-book-btn")
-addBookButton.addEventListener("click", addBookToLibrary)
+addBookButton.addEventListener("click", addBookToLibrary);
+
+const modal = document.querySelector(".book-form");
+const newBookButton = document.querySelector(".new-book-btn")
+const closeButton = document.querySelector(".close-btn")
+
+newBookButton.addEventListener("click", () => {
+    modal.showModal();
+})
+
+closeButton.addEventListener("click", () => {
+    modal.close();
+})
